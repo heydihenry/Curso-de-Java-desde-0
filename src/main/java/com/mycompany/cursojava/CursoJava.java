@@ -28,14 +28,19 @@ public class CursoJava {
             System.out.println("La cantidad solicitada del producto "+producto+" es menor o igual que la cantidad real");
         }
 
+        boolean vendido = false;
         if (disponible & stock > 0) {
             if (cantidad <= stock) {
+                vendido = true;
                 System.out.println("La venta del producto "+producto+" es permitida");
                 stock -= cantidad;
                 System.out.println("El stock actual del producto "+producto+" es: "+stock);
             }
 
         }
+        
+        String mensaje = vendido == true ? "valida" : "rechazada";
+        System.out.println("La compra es "+mensaje);
 
     }
 }
