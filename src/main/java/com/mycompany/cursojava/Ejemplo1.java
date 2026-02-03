@@ -7,7 +7,7 @@ package com.mycompany.cursojava;
  *
  * @author henry
  */
-public class CursoJava {
+public class Ejemplo1 {
 
     public static void main(String[] args) {
         String producto = "Cafe expreso";
